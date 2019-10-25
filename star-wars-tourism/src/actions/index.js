@@ -18,7 +18,7 @@ export const GET_DESTINATION_FAILED = "GET_DESTINATION_FAILED"
 export const getItinerary = () => {
     return (dispatch) => {
         dispatch({ type: GET_DESTINATION})
-        axios.get('http swapi.co/api/planets/1/')
+        axios.get('https:swapi.co/api/planets/')
         .then(response => {
             dispatch({ type: GOT_DESTINATION, payload: response.data})
         })

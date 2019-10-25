@@ -4,14 +4,20 @@ import { getItinerary } from './actions/index';
 import './App.css';
 
 function App(props) {
-console.log(props)
+
+useEffect(() => {
+  props.getItinerary();
+}, [])
 
   return (
     <div className="App">
       <h1>Hi</h1>
 
+      {props.dogError && <p>Error: {props.dogError}</p>}
+
       <div className="button-container">
-        <button onClick={() => props.getItinerary()} >
+        {/* <button onClick={() => props.getItinerary()} > */}
+        <button>
           Plan Your Getaway
         </button>
       </div>
