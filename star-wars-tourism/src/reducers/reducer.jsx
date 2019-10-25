@@ -1,0 +1,1 @@
+import { GET_DESTINATION } from '../actions/index'
