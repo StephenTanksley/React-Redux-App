@@ -6,7 +6,7 @@ import {
 
 const initialState = {
     planet: null,
-    isLoading: false;
+    isLoading: false,
     error: null
 }
 
@@ -15,7 +15,7 @@ export function reducer(state=initialState, action) {
         case GET_DESTINATION:
             return {
             ...state,
-            isLoading: true;
+            isLoading: true
         }
 
         case GOT_DESTINATION: 
@@ -32,7 +32,7 @@ export function reducer(state=initialState, action) {
                 isLoading: false
             }
         
-            default: 
+        default: 
             return state;
     }
 }
