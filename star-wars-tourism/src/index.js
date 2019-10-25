@@ -14,7 +14,7 @@ import * as serviceWorker from './serviceWorker';
 
 //create the store to get data rendered to state
 
-const store = createStorapplyMiddleware(thunk, logger));
+const store = createStore(reducer, applyMiddleware(thunk, logger));
 
 ReactDOM.render(
 <Provider store={store}>
