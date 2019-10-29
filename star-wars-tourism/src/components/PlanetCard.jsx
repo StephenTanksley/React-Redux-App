@@ -1,7 +1,7 @@
 import React from 'react'
 // import { connect } from 'react-redux'
 
-const PlanetCard = () => {
+const PlanetCard = (props) => {
 
   // console.log('planet card props', props)
 
@@ -9,7 +9,7 @@ const PlanetCard = () => {
     return (
         <div className="card">
           <h1> Hello </h1>
-            {/* <h2>Planet: {planets.name}</h2> */}
+            <h2>Planet: {props.name}</h2>
         </div>
     )
 }

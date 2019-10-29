@@ -14,12 +14,12 @@ export const PlanetList = props => {
         <div>
           {/* <h1> Rendering from the PlanetList component. </h1> */}
           {console.log(planets)}
-            {/* {planets.map((item, index) => {
+            {planets.map((item) => {
               console.log(item)
               return (
               <PlanetCard 
-                item = { item } 
-                key = { item.index } /> )})} */}
+                item = { item }  
+                /> )})}
 
         </div>
     )
@@ -27,7 +27,7 @@ export const PlanetList = props => {
 
 const mapStateToProps = state => {
     return {
-      planet: state.planet,
+      planet: state.planet.results,
       isLoading: state.isLoading,
       error: state.error
     }
