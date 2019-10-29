@@ -5,7 +5,8 @@ import {
     } from '../actions/index'
 
 export const initialState = {
-    planet: null,
+    //if you are expecting an array, you can't list the initialState as null.
+    planet: [],
     isLoading: false,
     error: null
 }

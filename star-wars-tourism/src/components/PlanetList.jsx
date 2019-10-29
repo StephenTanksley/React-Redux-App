@@ -13,12 +13,13 @@ export const PlanetList = props => {
     return (
         <div>
           {/* <h1> Rendering from the PlanetList component. </h1> */}
-          {console.log(planets)}
-            {planets.map((item) => {
-              console.log(item)
+          {/* {console.log(planets)} */}
+            {planets.map((item, index) => {
+              // console.log(item)
               return (
               <PlanetCard 
-                item = { item }  
+                item = { item }
+                key = { index }  
                 /> )})}
 
         </div>
