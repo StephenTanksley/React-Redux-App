@@ -4,7 +4,7 @@ import {
     GET_DESTINATION_FAILED    
     } from '../actions/index'
 
-const initialState = {
+export const initialState = {
     planet: null,
     isLoading: false,
     error: null
